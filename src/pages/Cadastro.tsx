@@ -173,7 +173,7 @@ const Cadastro: React.FC = () => {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-2 px-4 rounded-lg w-full disabled:opacity-50 disabled:cursor-not-allowed text-sm"
+              className="bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-2 px-4 rounded-lg w-full disabled:opacity-50 disabled:cursor-not-allowed text-sm transition-all duration-200 transform hover:scale-105 active:scale-95"
             >
               {isSubmitting ? (
                 <span className="flex items-center justify-center">
