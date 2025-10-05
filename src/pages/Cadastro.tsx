@@ -89,7 +89,7 @@ const Cadastro: React.FC = () => {
                     },
                   })}
                   type="text"
-                  className="w-full px-3 py-2 rounded-lg border border-gray-300 focus:border-indigo-500 bg-white text-sm"
+                  className="w-full px-3 py-2 rounded-lg border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 bg-white text-sm transition-all duration-200"
                   placeholder="Digite seu nome completo"
                 />
                 {errors.nome && (
@@ -119,7 +119,7 @@ const Cadastro: React.FC = () => {
                     },
                   })}
                   type="text"
-                  className="w-full px-3 py-2 rounded-lg border border-gray-300 focus:border-indigo-500 bg-white text-sm"
+                  className="w-full px-3 py-2 rounded-lg border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 bg-white text-sm transition-all duration-200"
                   placeholder="Escolha um nome de usuário"
                 />
                 {errors.nomeUsuario && (
@@ -145,7 +145,7 @@ const Cadastro: React.FC = () => {
                     },
                   })}
                   type="email"
-                  className="w-full px-3 py-2 rounded-lg border border-gray-300 focus:border-indigo-500 bg-white text-sm"
+                  className="w-full px-3 py-2 rounded-lg border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 bg-white text-sm transition-all duration-200"
                   placeholder="Digite seu email"
                 />
                 {errors.email && (
