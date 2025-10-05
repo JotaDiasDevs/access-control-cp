@@ -74,6 +74,10 @@ const Login: React.FC = () => {
                       value: 3,
                       message: 'Nome de usuário deve ter pelo menos 3 caracteres',
                     },
+                    pattern: {
+                      value: /^[a-zA-Z0-9._-]+$/,
+                      message: 'Nome de usuário pode conter apenas letras, números, pontos, hífens e underscores',
+                    },
                   })}
                   type="text"
                   className="w-full px-3 py-2 rounded-lg border border-gray-300 focus:border-indigo-500 bg-white text-sm"
