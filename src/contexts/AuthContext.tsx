@@ -22,7 +22,12 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
   useEffect(() => {
     const usuarioSalvo = localStorage.getItem('usuario');
     if (usuarioSalvo) {
-      setUsuario(JSON.parse(usuarioSalvo));
+      try {
+        setUsuario(JSON.parse(usuarioSalvo));
+      } catch (error) {
+        console.error('Erro ao carregar usuário do localStorage:', error);
+        localStorage.removeItem('usuario');
+      }
     }
   }, []);
 
